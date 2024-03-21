@@ -1,0 +1,591 @@
+/*importing font styles from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+header
+{
+	display: grid;
+	background-color: #64d3b1;
+}
+
+html, body {height: 80%}
+
+body
+{
+	background: white;
+	margin:0px;
+}
+
+/*common to all pages*/
+.pagecontent
+{
+	min-height: 100%;
+	margin: 5px;
+	padding: 5px;
+}
+
+.pagecontent h2 {font-family: 'Roboto', sans-serif;}
+
+footer
+{
+	background-color: #343a40;
+	color: #d3d3d3;
+	height: 220px;
+	position: relative;
+	display: flex;
+}
+
+.footerLeft
+{
+	flex: 1;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: small;
+	margin-left: 22px;
+}
+
+.footerLeft h1 { color: white; }
+
+.footerRight
+{
+	flex: 1;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: small;
+}
+
+.footerRight h1 { color: white; }
+
+.footerRight #commentname, #commentmessage
+{
+	border-radius: 10px;
+	width: 40%;
+	margin-bottom: 5px;
+	border: 1px solid #343a40;
+	outline: none;
+	background-color: #272727;
+	color: #bebdbd;
+}
+
+.footerRight #commentname {height: 2em;}
+
+.footerRight #commentmessage {height: 4.5em;}
+
+.footerRight #commentbutton
+{
+	background-color: #64d3b1;
+	color: black;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 15%;
+	height: 1.8em;
+	border: 1px solid #999;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.logo 
+{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*Navigation bar*/
+.navbar 
+{ 
+	background-color: #eceff1;
+	overflow: auto;
+}
+
+.navbar ul
+{
+	margin-left: auto;  
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	max-width: 80em;
+	box-sizing: border-box;
+	padding: 0px; 
+	font-family: 'Lato', sans-serif;
+}
+.navbar img
+{
+	height: 2.8em;
+	padding: 0px;
+	margin-left: 0px;
+	transform: rotate (180deg);
+}
+
+.navbar li 
+{ 
+	display:inline; 
+	float: left;
+}
+
+.navbar a 
+{ 
+	width: 6em;  
+	display:inline-block ; 	 
+	line-height: 3em;
+	text-align: center;
+	text-decoration: none;
+	color: #393E46;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navbar a:hover
+{
+	background-color: #64d3b1;
+	color: black;
+}
+
+/* search bar in the Home page*/
+.searchbar
+{
+	margin-right: 60px;
+	margin-top: 12px;
+	float: right;
+}
+
+.searchbar #searchproduct
+{
+	border-radius: 20px;
+	width: 70%;
+	height: 1.5em;
+	border: 1px solid #64d3b1;
+	outline: none;
+}
+
+.searchbar #submit
+{
+	background-color: #64d3b1;
+	color: black;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 25%;
+	height: 1.8em;
+	border: 1px solid #999;
+	outline: none;
+	font-family: 'Lato', sans-serif;
+}
+
+/*Homepage */
+.hometop 
+{
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 5px;
+}
+
+#sliderImages 
+{
+	width : 500%;
+	-webkit-animation: slide 20s infinite;
+}
+
+@-webkit-keyframes slide
+{
+	0%{margin-left: 0px;}
+	15%{margin-left: 0px;}
+	20%{margin-left: -100%;}
+	35%{margin-left: -100%;}
+	40%{margin-left: -200%;}
+	55%{margin-left: -200%;}
+	60%{margin-left: -300%;}
+	75%{margin-left: -300%;}
+	80%{margin-left: -400%;}
+	95%{margin-left: -400%;}
+	100%{margin-left: 0px;}
+}
+
+#sliderImages img
+{
+    width: 20%;
+	max-height: 350px;
+    float:left;
+}
+
+.homecenter
+{
+	position: relative;
+	display: flex;
+	padding-left: 10%;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: #343a40;
+	font-size: 1.5em;
+	max-width: 80%;
+	padding-top: 3%;
+}
+
+.homecenter #leftcenter, #rightcenter
+{
+	flex: 1;
+}
+
+.homebottom 
+{
+	position: relative;
+	display: flex;
+	max-width: 80%;
+	text-align: center;
+	padding-left: 10%;
+}
+
+.mostpopular1
+{
+	flex: 1;
+}
+
+.mostpopular2
+{
+	flex: 1;
+}
+
+.mostpopular3
+{
+	flex: 1;
+	border-right: 1px solid #eceff1;
+	
+}
+
+.brandpopular1
+{
+	flex: 1;
+}
+
+.brandpopular2
+{
+	flex: 1;
+}
+
+.brandpopular3
+{
+	flex: 1;
+}
+
+
+/*Product list page*/
+.productBox 
+{
+	margin-top:5px;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	background-color: #eeeeee;
+	overflow: auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.productBox img
+{
+	float:left;
+}
+
+.productsearch 
+{
+	margin-left: 60%;
+	margin-top: 12px;
+}
+
+.productsearch #productname
+{
+	border-radius: 20px;
+	width: 30%;
+	height: 1.5em;
+	border: 1px solid #999;
+	outline: none;
+}
+
+.productsearch #submit 
+{
+	background-color: #64d3b1;
+	color: black;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 12%;
+	height: 1.8em;
+	border: 1px solid #999;
+	outline: none;	
+	font-family: 'Lato', sans-serif;
+}
+
+.productsearch #pagenumber
+{
+	width: 2.5em;
+}
+
+.productsearch #SortBy
+{
+	width: 25%;
+	font-family: 'Lato', sans-serif;
+}
+
+/* Customer and Order list tables*/
+.tablelist table 
+{
+	position: relative;
+	left: 15%;
+	right:15%;
+	width: 70%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-radius: 12px 12px 0 0;
+	overflow: hidden;
+	box-shadow: 0 2px 5px;
+	text-align: center;	
+	background: #fafafa;
+	padding-bottom: 20px;
+}
+
+.tablelist th, td
+{
+	padding: 5px 10px;
+}
+
+.tablelist th 
+{
+	
+	background: #009688;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tablelist td
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.tablelist tr:nth-child(odd)
+{
+	background-color: #eeeeee;
+}
+
+/*Order Details Page - customer details*/
+#orderdetails
+{
+	margin: 10px;
+	
+}
+
+.OrderDetailCustomer table
+{
+	width:30%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-radius: 12px 12px 12px 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px;
+	text-align: left;	
+	background: white;
+	
+}
+
+.OrderDetailCustomer th 
+{
+	width:40%;
+	background: #009688;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+}
+
+.OrderDetailCustomer td
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*Order Details Page - product details*/
+
+.OrderDetailProducts table
+{
+	width: 76%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	overflow: hidden;	
+	background: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.OrderDetailProducts th 
+{
+	
+	background: #009688;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+	text-align: center;
+}
+
+.OrderDetailProducts th:last-child
+{
+	text-align: right;
+}
+
+.OrderDetailProducts td
+{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.OrderDetailProducts td:last-child
+{
+	text-align: right;
+}
+
+.TotalPrice
+{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 12%;
+	margin-left: 72%;
+}
+
+.TotalPrice table
+{
+	border-top: 3px solid #009688;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.TotalPrice td:last-child
+{
+	text-align: right;
+}
+
+/*view cart page*/
+.TotalPrice #UserName
+{
+	border-radius: 20px;
+	padding: 5px;
+	margin: 5px;
+	width: 90%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+.TotalPrice #ConfirmOrder, #EmptyCart
+{
+	color: #fff;
+	background-color: #009688;
+	width: 100%;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12px;
+	margin: 5px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.TotalPrice #ConfirmOrder:hover
+{
+	background-color: #29b6f6;
+}
+
+.TotalPrice #EmptyCart:hover
+{
+	background-color: #f44336;
+}
+
+/*view product page*/
+.ViewProductDetail table
+{
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+}
+
+.ViewProductDetail #BuyButton
+{
+	color: #fff;
+	background-color: #009688;
+	width: 10%;
+	padding: 5px;
+	border-radius: 10px;
+	font-size: 12px;
+	margin: 5px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.ViewProductDetail #BuyButton:hover
+{
+	background-color: #29b6f6;
+	
+}
+
+/*Sign Up page*/
+.SignUpForm
+{
+	width: 300px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+	background: #fff;
+	padding: 20px;
+	margin: 35px;
+	text-align: center;
+	
+}
+
+.SignUpForm h1
+{
+	color: #009688;
+	margin-bottom: 20px;
+}
+
+.SignUpForm #UserName, #FirstName, #LastName, #Address, #City
+{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+	width: 80%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+.SignUpForm #submit
+{
+	color: #fff;
+	background-color: #009688;
+	width: 90%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.signup
+{
+	background-image: url(images/signupbg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*cookies*/
+.error_message
+{ 
+	color: red;
+	font-size: 11;
+	font-family: 'Lato', sans-serif;
+}
+
+.message
+{
+	font-size: 13;
+	font-family: 'Lato', sans-serif
+}
